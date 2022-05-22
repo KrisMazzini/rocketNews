@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
     <title>Rocket News</title>
 </head>
 <body>
     
-    <div class="content-box">
+    <div id="content-box">
 
         <header>
             <img src="assets/logo.svg" alt="logo-rocketnews" id="logo">
@@ -22,17 +30,21 @@
                 tudo que você precisa saber para começar seu dia bem e informado
             </h2>
             <p>
-                noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.
+                noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.<br/>
                 perfeito para se preparar para codar &#x2615;
             </p>
             
-            <form action="" method="post" id="email-form">
+            <form action="" method="" id="email-form">
                 <fieldset form="email-form" name="contact-data">
                     <legend>Insira seu e-mail</legend>
                     
-                    <label for="email" hidden>E-mail</label>
-                    <input type="email" name="email" id="email" autocomplete="email" placeholder="oi@rocketseat.com" autofocus required>
-                    <img src="assets/send.svg" alt="send" class="icon">
+                    <div class="input">
+                        <label for="email" hidden>E-mail</label>
+                        <input type="email" name="email" autocomplete="email" placeholder="oi@rocketseat.com" required>
+                        <button type="submit" form="email-form">
+                            <img src="assets/send.svg" alt="send" class="icon">
+                        </button>
+                    </div>
                 </fieldset>
             </form>
         </main>
@@ -46,7 +58,7 @@
 
     </div>
 
-    <img src="assets/read_news.jpg" alt="side-image">
-
+    <div id="image-box"></div>
+    
 </body>
 </html>
