@@ -60,6 +60,10 @@ legend {
     margin-bottom: 17px;
 }
 
+aside {
+    position: absolute;
+}
+
 aside a {
     margin-top: 98px;
     
@@ -106,27 +110,29 @@ button {
     
     border-radius: 0;
     border: none;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     background-color: var(--bg-button-color);
-
+    
     transition: var(--transition);
 }
 
 button:hover {
     cursor: pointer;
     background-color: var(--title-color);
-
+    
     transition: var(--transition);
 }
 
 .input {
     width: calc(100% + 150px);
     height: 48px;
-
+    
+    box-shadow: 4px 10px 15px rgba(0, 0, 0, 0.5);
+    
     display: flex;
     align-items: center;
     
