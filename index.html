@@ -43,7 +43,7 @@
                 
                 <div class="input">
                     <label for="email" hidden>Email</label>
-                    <input type="email" name="email" autocomplete="email" placeholder="hi@rocketseat.com" required>
+                    <input type="email" name="email" autocomplete="email" placeholder="hi@rocketseat.com" onfocus="clearPlaceholder(this)" onfocusout="setPlaceholder(this)" required>
                     <button type="submit" form="email-form">
                         <img src="assets/send.svg" alt="send" class="icon">
                     </button>
@@ -58,6 +58,16 @@
             <img src="assets/arrow-right.svg" alt="let-me-read" class="icon">
         </a>
     </aside>
+
+    <script>
+        function clearPlaceholder(elem) {
+            elem.placeholder = ""
+        }
+
+        function setPlaceholder(elem) {
+            elem.placeholder = "hi@rocketseat.com"
+        }
+    </script>
 
 </body>
 </html>
